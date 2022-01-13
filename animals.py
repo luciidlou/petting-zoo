@@ -6,11 +6,13 @@ from slithering import Snake, Salamander, LeglessLizard
 from swimming import Swordtail, Bristlenose, Rainbowfish, Angelfish, SiameseAlgaeEater, Guppy
 from attractions import PettingZoo, Wetlands, SnakePit
 
+
+
 # walking animals
 george = Llama("George", "morning", "oats hay")
 sam = Donkey("Sam", "midday", "carrots")
 roger = MiniHorse("Roger", "afternoon", "carrots")
-judith = Pig("Judith", "morning", "soybean meal")
+judith = Pig("Judith", "morning", "soybean meal", 3971134)
 jack = Rabbit("Jack", "midday", "orchard grass")
 michael = Goat("Michael", "afternoon", "chaff hay")
 
@@ -52,22 +54,32 @@ critter_cove.add_animal(ethan)
 critter_cove.add_animal(guillermo)
 
 
-# add animals to The Slither Inn
-slither_inn.add_animal(sampson)
-slither_inn.add_animal(larry)
-slither_inn.add_animal(susan)
+# # add animals to The Slither Inn
+# slither_inn.add_animal(sampson)
+# slither_inn.add_animal(larry)
+# slither_inn.add_animal(susan)
 
-# print information about Varmint Village and list its animals
-print(f"{varmint_village.attraction_name} is where you'll find {varmint_village.description}, like")
-for animal in varmint_village.animals:
-    print(animal)
+# # print information about Varmint Village and list its animals
+# print(f"{varmint_village.attraction_name} is where you'll find {varmint_village.description}, like")
+# for animal in varmint_village.animals:
+#     print(animal)
 
-# print information about Critter Cove and list its animals
-print(f"{critter_cove.attraction_name} is where you'll find {critter_cove.description}, like")
-for animal in critter_cove.animals:
-    print(animal)
+# # print information about Critter Cove and list its animals
+# print(f"{critter_cove.attraction_name} is where you'll find {critter_cove.description}, like")
+# for animal in critter_cove.animals:
+#     print(animal)
 
-# print information about The Slither Inn and list its animals
-print(f"{slither_inn.attraction_name} is where you'll find {slither_inn.description}, like")
-for animal in slither_inn.animals:
-    print(animal)
+# # print information about The Slither Inn and list its animals
+# print(f"{slither_inn.attraction_name} is where you'll find {slither_inn.description}, like")
+# for animal in slither_inn.animals:
+#     print(animal)
+
+print("------------------------")
+
+print(judith.chip_num)
+judith.chip_num = 12
+print(judith.chip_num)
+
+print("------------------------")
+print(
+    f"The last animal added to {varmint_village.attraction_name} was {varmint_village.last_critter_added}")

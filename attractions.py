@@ -17,6 +17,16 @@ class PettingZoo:
         """
         self.animals.append(animal)
 
+    @property
+    def last_critter_added(self):
+        """This function gives us the last animal in the animal list
+
+        Returns:
+            dictionary: last index in the animal list
+        """
+        most_recent_animal = self.animals[-1]
+        return most_recent_animal
+
 
 class SnakePit:
     """Responsible for creating a snake pit attraction object"""
@@ -34,6 +44,16 @@ class SnakePit:
         """
         self.animals.append(animal)
 
+    @property
+    def last_critter_added(self):
+        """This function gives us the last animal in the animal list
+
+        Returns:
+            dictionary: last index in the animal list
+        """
+        most_recent_animal = self.animals[-1]
+        return most_recent_animal
+
 
 class Wetlands:
     """Responsible for creating a wetlands attraction object"""
@@ -50,3 +70,13 @@ class Wetlands:
             animal (dictionary): the animal we want to append
         """
         self.animals.append(animal)
+
+    @property
+    def last_critter_added(self):
+        """This function gives us the last animal in the animal list
+
+        Returns:
+            dictionary: last index in the animal list
+        """
+        most_recent_animal = self.animals[-1]
+        return most_recent_animal
